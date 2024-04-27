@@ -98,9 +98,9 @@
         text-align: center;
     }
     .desc {
-        text-align: center;
+        text-align: justify;
         margin: 1rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 }
 

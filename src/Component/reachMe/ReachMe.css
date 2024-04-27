@@ -31,6 +31,7 @@
     font-size: 16px;
     margin: 1rem 0;
     text-align: left;
+    padding-right: 1rem;
 }
 .links {
     /* margin:  auto; */
@@ -95,6 +96,16 @@
     .contactDetails {
         margin-top: 2rem;
         align-items: left;
+        margin-right: 2rem;
     }
    
+}
+@media screen and (max-width:693px) {
+    .contactDetails {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:693px) {
+    
 }

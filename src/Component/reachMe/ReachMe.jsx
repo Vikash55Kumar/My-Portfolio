@@ -14,8 +14,8 @@ export default function ReachMe() {
     <section className="reachMe">
         <div className="connectLink">
             <span className="title2">Reach out to me here</span>
-            <span className="description2">Feel free to ping me for volunteering, discussing your
-                 ideas <br></br> or grabbing a cup of coffee
+            <span className="description2">Feel free to ping me for volunteering,<br></br> discussing your
+                 ideas or grabbing a<br></br> cup of coffee
             </span>
             <div className="links">
                 <a className="link" href="https://www.linkedin.com/in/software-enginner-vikash">
@@ -41,9 +41,11 @@ export default function ReachMe() {
                   <span className="icon icon-map-maker">
                     <LocationOnIcon/> &nbsp; &nbsp;
                   </span>
-                  <span className="text">NH-62, JIET College, New Pali Road, Jodhpur, <br></br>
+                  <span id='text1' className="text">NH-62, JIET College, New Pali<br></br>  
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                  Rajasthan, India PIN:842802</span>
+                  Road, Jodhpur, Rajasthan, India <br></br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   PIN:842802</span>
                   </a>
                 </li>
                 <li className='addressLink'>
