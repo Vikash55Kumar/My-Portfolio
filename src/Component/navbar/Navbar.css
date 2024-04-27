@@ -1,0 +1,96 @@
+.navbar {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    /* margin-left: 2rem; */
+    margin-right: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+
+}
+
+#logo {
+    object-fit: cover;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+    opacity: 80%;
+}
+#logo:hover {
+    opacity: 100%;
+}
+.navMenuItem {
+    margin: 1rem;
+    font-size: large;
+}
+.navMenuItem:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.navButton {
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: .1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    margin-right: 2rem;
+    background-color: white;
+    opacity: 90%;
+}
+.navButton:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+.navButtonImg {
+    object-fit: cover;
+    height: 20px;
+    margin: 5px;
+    position: sticky;
+}
+.active {
+    color:rgb(40, 137, 212);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(40, 137, 212);
+}
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+.NavMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background:rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width:600px) {
+    .mobMenu {
+        display: flex;
+    }
+    .navMenuItem {
+        display: none;
+    }
+}
