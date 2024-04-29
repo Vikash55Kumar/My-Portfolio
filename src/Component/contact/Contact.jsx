@@ -40,7 +40,7 @@ export default function Contact() {
                             <TextField
                                 className='forms'
                                 id="name"
-                                name='your_name'
+                                name='name'
                                 required
                                 label="Name"
                                 placeholder="Your Name"
@@ -48,7 +48,7 @@ export default function Contact() {
                             <TextField
                                 className='forms'
                                 id="email"
-                                name='your_email'
+                                name='email'
                                 required
                                 label="Email"
                                 placeholder="Your email"
