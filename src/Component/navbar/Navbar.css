@@ -65,6 +65,7 @@
     display: none;
     object-fit: cover;
     height: 1.8rem;
+    margin-right: 1.1rem;
 }
 .NavMenu {
     position: absolute;

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import {Link} from "react-scroll";
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import menu from '../../assets/menu.png'
+import menu from '../../assets/menu2.jpg'
 
 export default function Navbar() {
   const [showMenu, setShowMenu]=useState(false);
@@ -32,7 +32,6 @@ export default function Navbar() {
           <Link activeClass='active' to='Company-sec' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Dream</Link>
           <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Contact</Link>
         </div>
-
     </div>
     </>
   )
