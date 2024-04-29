@@ -34,7 +34,6 @@ export default function Contact() {
 
     return (
         <>
-<<<<<<< HEAD
           <section id="contact">
               <div className="clientContact">
                   <span className="title1">Let's Connect</span>
@@ -77,7 +76,6 @@ export default function Contact() {
                   </div>
               </div>
           </section>
-=======
             <section id="contact">
                 <div className="clientContact">
                     <span className="title1">Let's Connect</span>
@@ -116,7 +114,6 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
->>>>>>> 15147c105b5485ee87a9e9088e1470e4c7522268
         </>
   )
 }
