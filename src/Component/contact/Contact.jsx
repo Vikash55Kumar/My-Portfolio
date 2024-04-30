@@ -18,7 +18,7 @@ export default function Contact() {
         e.preventDefault();
         emailjs
           .sendForm('service_shadr0o', 'template_mj7rlbd', form.current, {
-            publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
+            publicKey: `${REACT_APP_PUBLIC_KEY}`,
           })
           .then(
             (result) => {
@@ -27,7 +27,7 @@ export default function Contact() {
               alert("Form submit successfully");
             },
             (error) => {
-              console.log('FAILED....', error.text);
+              console.log('FAILED...', error.text);
             },
           );
       };
