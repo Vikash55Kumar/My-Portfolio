@@ -8,17 +8,17 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default function Contact() {
-    const [validate, setValidate]=useState(false);
-    function onChange(value) {
-      setValidate(true);
-    }
+    // const [validate, setValidate]=useState(false);
+    // function onChange(value) {
+    //   setValidate(true);
+    // }
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
           .sendForm('service_shadr0o', 'template_mj7rlbd', form.current, {
-            publicKey: `${process.env.REACT_APP_PUBLIC_KEY}`,
+            publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
           })
           .then(
             (result) => {
@@ -67,11 +67,11 @@ export default function Contact() {
                               label="Message" multiline rows={3}
                               placeholder='Your message'
                           />
-                          <ReCAPTCHA className='recaptcha'
-                            sitekey={process.env.REACT_APP_SITE_KEY}
+                          {/* <ReCAPTCHA className='recaptcha'
+                            sitekey={import.meta.env.VITE_SITE_KEY}
                             onChange={onChange}                           
-                          />
-                          <Button variant="contained" className="submit-btn" type="submit" value="Send" disabled={!validate}>Submit</Button>
+                          /> */}
+                          <Button variant="contained" className="submit-btn" type="submit" value="Send" >Submit</Button>
                       </form>
                   </div>
               </div>
