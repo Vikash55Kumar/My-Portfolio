@@ -27,7 +27,7 @@ export default function Contact() {
               alert("Form submit successfully");
             },
             (error) => {
-              console.log('FAILED...', error.text);
+              console.log('FAILED....', error.text);
             },
           );
       };
