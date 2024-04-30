@@ -8,10 +8,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default function Contact() {
-    // const [validate, setValidate]=useState(false);
-    // function onChange(value) {
-    //   setValidate(true);
-    // }
+    const [validate, setValidate]=useState(false);
+    function onChange(value) {
+      setValidate(true);
+    }
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -67,11 +67,11 @@ export default function Contact() {
                               label="Message" multiline rows={3}
                               placeholder='Your message'
                           />
-                          {/* <ReCAPTCHA className='recaptcha'
+                          <ReCAPTCHA className='recaptcha'
                             sitekey={import.meta.env.VITE_SITE_KEY}
                             onChange={onChange}                           
-                          /> */}
-                          <Button variant="contained" className="submit-btn" type="submit" value="Send" >Submit</Button>
+                          />
+                          <Button variant="contained" className="submit-btn" type="submit" value="Send" disabled={!validate}>Submit</Button>
                       </form>
                   </div>
               </div>
