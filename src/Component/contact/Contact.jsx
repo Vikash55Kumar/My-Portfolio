@@ -18,7 +18,7 @@ export default function Contact() {
         e.preventDefault();
         emailjs
           .sendForm('service_shadr0o', 'template_mj7rlbd', form.current, {
-            publicKey: `${REACT_APP_PUBLIC_KEY}`,
+            publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
           })
           .then(
             (result) => {
